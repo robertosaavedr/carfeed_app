@@ -1,11 +1,33 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      <ion-icon name="map-outline"></ion-icon>
+      <ion-icon name="person-outline"></ion-icon>
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-item>
+    <ion-label>Carfeed code</ion-label>
+    <ion-input placeholder="código" type="text"></ion-input>
+  </ion-item>
+  <ion-card-header>
+    <ion-card-title><b>Juan Antonio</b><ion-icon name="medal-outline"></ion-icon></ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-item lines="none">
+      <ion-icon name="analytics-outline"></ion-icon>
+        &nbsp; Rutas
+      <ion-badge slot="end">200</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="car-outline"></ion-icon>
+        &nbsp; Conducción
+      <ion-badge slot="end">200</ion-badge>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="options-outline"></ion-icon>
+        &nbsp; Cardfeed score
+      <ion-badge slot="end">400</ion-badge>
+    </ion-item>
+  </ion-card-content>
 </ion-content>
